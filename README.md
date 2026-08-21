@@ -2,7 +2,7 @@
 
 ![Flare Tracker](https://substackcdn.com/image/fetch/$s_!Tx7T!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10eb13ed-f795-4c6a-9f3b-ad5ef64a5562_1508x692.png)
 
-**Full documentation writeup here: [https://darkmarc.substack.com/p/flare-tracker-an-open-source-link](https://darkmarc.substack.com/p/flare-tracker-an-open-source-link))**
+**Full documentation writeup here: [https://darkmarc.substack.com/p/flare-tracker-an-open-source-link](https://darkmarc.substack.com/p/flare-tracker-an-open-source-link)**
 
 A single self-contained Bash script that deploys and manages Flare Tracker, a link tracker that runs on Cloudflare Workers. It provisions the storage and Worker for you, gives you a hosted admin dashboard, and needs nothing on your machine beyond `curl` and `python3`.
 
