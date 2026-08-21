@@ -6,11 +6,24 @@
 
 A single self-contained Bash script that deploys and manages Flare Tracker, a link tracker that runs on Cloudflare Workers. It provisions the storage and Worker for you, gives you a hosted admin dashboard, and needs nothing on your machine beyond `curl` and `python3`.
 
-Flare Tracker creates short links of the form `https://<your-host>/s/<token>`. When someone opens one, they first see a plain page that names exactly what will be recorded, and nothing is recorded unless they choose to continue. It is meant for analytics where the people being tracked have a basis to be tracked and can see what is collected. Please read the "Responsible use" section before deploying it.
+Flare Tracker creates short links of the form `https://<your-host>/s/<token>`. 
+
+This tool is intended for legal and compliant use in accordance with local data collection laws. An optional consent page can be enabled to inform visitors exactly what data will be recorded before tracking begins.
+
+Read the "Responsible use" section before deploying.
 
 ## What it records
 
 When a visitor a tracked link, Flare Tracker records the destination, a timestamp, the visitor IP, approximate location (country and city), the ISP and ASN, and the browser user agent. If a link is set to "enhanced," it also records screen resolution, platform, and time zone, all of which are listed on the consent page. The consent page discloses every one of these fields before anything is stored.
+
+## Responsible use
+
+Data privacy regulations vary globally. Depending on your jurisdiction and your target audience, tracking user data without prior notice or explicit consent may violate local analytics and privacy laws. 
+
+* **Consent Page Mode:** Enabling the optional consent page ensures complete transparency. Visitors see an explicit breakdown of every data point collected before tracking starts, providing a reliable compliance foundation.
+* **Direct Redirect Mode:** Disabling the consent page triggers immediate data collection and redirections. This configuration should only be deployed if you already have an alternative legal basis for tracking the individuals visiting your links.
+
+Configure your link settings responsibly to align with the regulatory requirements of your region.
 
 ## Requirements
 
